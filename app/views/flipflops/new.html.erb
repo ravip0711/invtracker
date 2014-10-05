@@ -1,0 +1,8 @@
+<h1>flipflops#new<h1>
+<h3>This page will be for uploading new inventory file</h3>
+
+<h2>Import Inventory List</h2>
+<%= form_tag import_flipflops_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>  
