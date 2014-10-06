@@ -1,0 +1,18 @@
+<h1>flipflops#index</h1>
+
+<% @flipflops.each do |flipflop| %>
+  <tr>
+    <td><%= flipflop.dcs %></td>
+    <td><%= flipflop.vc %></td>
+    <td><%= flipflop.attrstyle %></td>
+    <td><%= flipflop.desc1 %></td>
+    <td><%= flipflop.desc2 %></td>
+    <td><%= flipflop.size %></td>
+    <td><%= flipflop.oh_qty %></td>
+    <td><%= flipflop.oh_ext_cost %></td>
+    <td><%= flipflop.oh_ext_retail %></td>
+  </tr>
+<% end %>
+<br>
+<br>
+<%= link_to "ADD Flip Flop Inventory", new_flipflop_path %>

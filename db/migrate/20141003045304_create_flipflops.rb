@@ -6,7 +6,7 @@ class CreateFlipflops < ActiveRecord::Migration
       t.string :vc
       t.string :desc1
       t.string :desc2
-      t.string :attr
+      t.string :attrstyle
       t.integer :size
       t.integer :oh_qty
       t.integer :oh_ext_cost
