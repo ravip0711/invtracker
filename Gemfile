@@ -27,6 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 #Ravi added
+gem 'spreadsheet'
 # gem "better_errors", group: :development
 # gem "binding_of_caller"
 

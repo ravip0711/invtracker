@@ -11,6 +11,8 @@ require "sprockets/railtie"
 
 #Ravi added
 require "CSV"
+require 'spreadsheet'
+Spreadsheet.client_encoding = 'UTF-8'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
