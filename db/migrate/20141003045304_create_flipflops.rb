@@ -1,7 +1,7 @@
 class CreateFlipflops < ActiveRecord::Migration
   def change
     create_table :flipflops do |t|
-      t.date :last_rcvd_date
+      t.string :last_rcvd_date
       t.string :dcs
       t.string :vc
       t.string :desc1

@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20141003045304) do
 
   create_table "flipflops", force: true do |t|
-    t.date     "last_rcvd_date"
+    t.string   "last_rcvd_date"
     t.string   "dcs"
     t.string   "vc"
     t.string   "desc1"
