@@ -1,18 +1,42 @@
 <h1>flipflops#index</h1>
-
-<% @flipflops.each do |flipflop| %>
-  <tr>
-    <td><%= flipflop.dcs %></td>
-    <td><%= flipflop.vc %></td>
-    <td><%= flipflop.attrstyle %></td>
-    <td><%= flipflop.desc1 %></td>
-    <td><%= flipflop.desc2 %></td>
-    <td><%= flipflop.size %></td>
-    <td><%= flipflop.oh_qty %></td>
-    <td><%= flipflop.oh_ext_cost %></td>
-    <td><%= flipflop.oh_ext_retail %></td>
-  </tr>
-<% end %>
+<table>
+    <tr>
+        <th>last_rcvd_date</th>
+        <th>dcs</th>
+        <th>vc</th>
+        <th>desc1</th>
+        <th>desc2</th>
+        <th>attrstyle</th>
+        <th>size</th>
+        <th>oh_qty</th>
+        <th>oh_ext_cost</th>
+        <th>oh_ext_retail</th>
+        <th>sold_qty</th>
+        <th>sold_ext_cost</th>
+        <th>sold_mgr</th>
+        <th>weeks_of_supply</th>
+        <th>report_sell_thru</th>
+    </tr>
+    <tr>
+    <% @flipflops.each do |flipflop| %>
+        <td><%= flipflop.last_rcvd_date %></td>
+        <td><%= flipflop.dcs %></td>
+        <td><%= flipflop.vc %></td>
+        <td><%= flipflop.desc1 %></td>
+        <td><%= flipflop.desc2 %></td>
+        <td><%= flipflop.attrstyle %></td>
+        <td><%= flipflop.size %></td>
+        <td><%= flipflop.oh_qty %></td>
+        <td><%= flipflop.oh_ext_cost %></td>
+        <td><%= flipflop.oh_ext_retail %></td>
+        <td><%= flipflop.sold_qty %></td>
+        <td><%= flipflop.sold_ext_cost %></td>
+        <td><%= flipflop.sold_mgr %></td>
+        <td><%= flipflop.weeks_of_supply %></td>
+        <td><%= flipflop.report_sell_thru %></td>
+    </tr>
+    <% end %>
+</table>
 <br>
 <br>
 <%= link_to "ADD Flip Flop Inventory", new_flipflop_path %>
