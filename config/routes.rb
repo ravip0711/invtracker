@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 resources :flipflops do
   collection do
     post :import
+    delete :remove_all
   end
 end
   root to: 'home#index'

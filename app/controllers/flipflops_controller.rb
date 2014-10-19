@@ -15,4 +15,12 @@ class FlipflopsController < ApplicationController
   def show
   end
 
+  def remove_all
+    flipflops = Flipflop.all
+      flipflops.each do |flipflop|
+        flipflop.destroy
+      end
+    redirect_to flipflops_path, notice: "Flip Flops Cleared."
+  end
+
 end
